@@ -17,3 +17,6 @@ addPlant(createAsparagus());
 addPlant(createCorn());
 
 console.log(usePlants());
+
+import { tractor } from './tractor.js';
+tractor(yearlyPlan); 
