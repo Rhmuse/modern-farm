@@ -34,3 +34,18 @@ h1,h2,h3,h4,h5,h6 {
     background-color: darksalmon;
 }
 
+.yellow{
+    background-color: cornsilk;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.plant {
+    width: auto;
+    text-align: center;
+    padding: 1em;
+}
