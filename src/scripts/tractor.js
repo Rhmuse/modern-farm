@@ -9,11 +9,6 @@ import { createWheat } from './seeds/wheat.js';
 export const tractor = (plan) => {
     for (const row of plan) {
         for (const seed of row) {
-            // if (typeof seed === Array) {
-            //     addPlant(seed[0])
-            // } else {
-            //     addPlant(seed);
-            // }
             if (seed === "Asparagus") {
                 const asparagus = createAsparagus();
                 addPlant(asparagus);
@@ -36,6 +31,6 @@ export const tractor = (plan) => {
         }
     }
     let sownField = usePlants();
-    console.log(sownField);
+    // console.log(sownField);
     return sownField;
 }
