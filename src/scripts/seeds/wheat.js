@@ -1,4 +1,4 @@
-export default createWheat = () => {
+export const createWheat = () => {
     return {
         type: "Wheat",
         height: 230,

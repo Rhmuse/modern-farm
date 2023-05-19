@@ -1,4 +1,4 @@
-export default createCorn = () => {
+export const createCorn = () => {
     return [
         {
             type: "Corn",
