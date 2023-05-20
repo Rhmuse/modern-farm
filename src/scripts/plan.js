@@ -1,5 +1,5 @@
 const types = ["Soybean", "Corn", "Asparagus", "Wheat", "Potato", "Sunflower"]
-
+// const types = ["Corn"]
 export const createPlan = () => {
     const plan = []
 
