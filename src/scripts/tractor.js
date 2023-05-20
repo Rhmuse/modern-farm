@@ -1,4 +1,4 @@
-import { addPlant, usePlants } from "./field.js";
+import { addPlant } from "./field.js";
 import { createAsparagus } from './seeds/asparagus.js';
 import { createCorn } from './seeds/corn.js';
 import { createPotato } from './seeds/potato.js';
@@ -6,7 +6,7 @@ import { createSoybean } from './seeds/soybean.js';
 import { createSunflower } from './seeds/sunflower.js';
 import { createWheat } from './seeds/wheat.js';
 
-export const tractor = (plan) => {
+export const plantSeeds = (plan) => {
     for (const row of plan) {
         for (const seed of row) {
             if (seed === "Asparagus") {
@@ -14,7 +14,9 @@ export const tractor = (plan) => {
                 addPlant(asparagus);
             } else if (seed === "Corn") {
                 const corn = createCorn();
-                addPlant(corn[0]);
+                for (const seed of corn) {
+                    addPlant(seed);
+                };
             } else if (seed === "Potato") {
                 const potato = createPotato();
                 addPlant(potato);
@@ -30,7 +32,8 @@ export const tractor = (plan) => {
             }
         }
     }
-    let sownField = usePlants();
+    //This func shouldn't return anything.
+    // let sownField = usePlants();
     // console.log(sownField);
-    return sownField;
+    // return sownField;
 }
